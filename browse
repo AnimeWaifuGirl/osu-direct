@@ -2,14 +2,14 @@
 <head>
 <title>osu.direct :: Browse</title>
 <meta charset="utf-8" />
-<link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+<link rel="icon" type="image/x-icon" href="/osu-direct/assets/img/icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="/assets/css/rangeslider.css" rel="stylesheet">
-<link href="/assets/css/cirrus.min.css" rel="stylesheet" />
-<link href="/assets/css/all.min.css" rel="stylesheet" />
-<link href="/assets/css/osudirect.css" rel="stylesheet" />
-<link href="/assets/css/cirrus.ctp.css" rel="stylesheet" />
-<link href="/assets/css/cirrus.ctp.light.css" rel="stylesheet" />
+<link href="/osu-direct/assets/css/rangeslider.css" rel="stylesheet">
+<link href="/osu-direct/assets/css/cirrus.min.css" rel="stylesheet" />
+<link href="/osu-direct/assets/css/all.min.css" rel="stylesheet" />
+<link href="/osu-direct/assets/css/osudirect.css" rel="stylesheet" />
+<link href="/osu-direct/assets/css/cirrus.ctp.css" rel="stylesheet" />
+<link href="/osu-direct/assets/css/cirrus.ctp.light.css" rel="stylesheet" />
 </head>
 <body>
 <div class="pageScrollers">
@@ -23,8 +23,8 @@
 <div class="header header-fixed unselectable header-animated header-gray">
 <div class="header-brand">
 <div class="nav-item no-hover">
-<a href="/home">
-<img alt="osu.direct logo" src="/assets/img/logo.png" class="logo mr-1" width="30">
+<a href="./home">
+<img alt="osu.direct logo" src="/osu-direct/assets/img/logo.png" class="logo mr-1" width="30">
 <h6 class="title">osu.direct</h6>
 </a>
 </div>
@@ -43,14 +43,14 @@
 <a href="/browse">Browse</a>
 </div>
 <div class="nav-item" id="nav-recommend">
-<a href="/recommend">Recommend</a>
+<a href="/osu-direct/recommend">Recommend</a>
 </div>
 <div class="nav-item has-sub toggle-hover" id="dropdown">
 <a class="nav-dropdown-link">More</a>
 <ul class="dropdown-menu dropdown-animated" role="menu">
-<li role="menu-item"><a href="/doc">Documentation</a></li>
-<li role="menu-item"><a href="/discord" target="_blank">Discord</a></li>
-<li role="menu-item"><a href="/team">Team</a></li>
+<li role="menu-item"><a href="./doc">Documentation</a></li>
+<li role="menu-item"><a href="./discord" target="_blank">Discord</a></li>
+<li role="menu-item"><a href="./team">Team</a></li>
 </ul>
 </div>
 </div>
