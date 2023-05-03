@@ -1,0 +1,1 @@
+(async()=>{const fetchedAPI=await fetch(`${apiUrl}/doc`,{method:'POST'});const json=await fetchedAPI.json();$('#doc').css('opacity','0');window.ui=SwaggerUIBundle({spec:json,dom_id:'#doc',onComplete:()=>{$("#loading").remove();$('#doc').addClass('animated slideSide wait-1');}});})();

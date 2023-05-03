@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+<title>osu.direct :: Team</title>
+<meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/assets/css/rangeslider.css" rel="stylesheet">
+<link href="/assets/css/cirrus.min.css" rel="stylesheet" />
+<link href="/assets/css/all.min.css" rel="stylesheet" />
+<link href="/assets/css/osudirect.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.light.css" rel="stylesheet" />
+</head>
+<body>
+<div class="pageScrollers">
+<div class="pageScroller" id="pageScrollerTop">
+<i class="fas fa-chevron-up"></i>
+</div>
+<div class="pageScroller" id="pageScrollerBottom">
+<i class="fas fa-chevron-down"></i>
+</div>
+</div>
+<div class="header header-fixed unselectable header-animated header-gray">
+<div class="header-brand">
+<div class="nav-item no-hover">
+<a href="/home">
+<img alt="osu.direct logo" src="/assets/img/logo.png" class="logo mr-1" width="30">
+<h6 class="title">osu.direct</h6>
+</a>
+</div>
+<div class="nav-item nav-btn" id="header-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="header-nav" id="header-menu">
+<div class="nav-left">
+<div class="nav-item" id="nav-home">
+<a href="/home">Home</a>
+</div>
+<div class="nav-item" id="nav-browse">
+<a href="/browse">Browse</a>
+</div>
+<div class="nav-item" id="nav-recommend">
+<a href="/recommend">Recommend</a>
+</div>
+<div class="nav-item has-sub toggle-hover" id="dropdown">
+<a class="nav-dropdown-link">More</a>
+<ul class="dropdown-menu dropdown-animated" role="menu">
+<li role="menu-item"><a href="/doc">Documentation</a></li>
+<li role="menu-item"><a href="/discord" target="_blank">Discord</a></li>
+<li role="menu-item"><a href="/team">Team</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="hero hero-dark mt-6">
+<div class="hero-body u-center">
+<h1 class="text-white headline-3 uppercase w-100p u-text-center animated slideSide wait-1"> <b>Team</b></h1>
+<div class="w-90p-md" style="position: relative">
+<div class="divider mb-3 animated slideSide wait-2"></div>
+<div class="row u-center">
+<div class="u-flex u-flex-wrap u-justify-space-around u-gap-5 u-round-xs text-white" id="teamList">
+<div class="loading-block">
+<span>loading...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer bg-gray-900">
+<div class="animated slideSide wait-2">
+<h6 class="footer__title text-white uppercase">osu.direct</h6>
+<div class="content">
+<div class="divider"></div>
+<div class="row">
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/doc">
+<li class="footer__list-item">Documentation</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/discord" target="_blank">
+<li class="footer__list-item">Discord</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/team">
+<li class="footer__list-item">Team</li>
+</a>
+</ul>
+</div>
+</div>
+</div>
+<p class="subtitle font-semibold text-xs">osu.direct © 2023 - not affiliated with osu! or peppy in any ways</p>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/textscramble.js"></script>
+<script type="text/javascript" src="/assets/js/rainbowvis.js"></script>
+<script type="text/javascript" src="/assets/js/osudirect.js"></script>
+<script type="text/javascript" src="/assets/js/rangeslider.js"></script>
+<script src="/assets/js/osudirect.team.js"></script>
+</html>

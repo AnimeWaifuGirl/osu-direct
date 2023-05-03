@@ -1,0 +1,234 @@
+<html lang="en">
+<head>
+<title>osu.direct :: Browse</title>
+<meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/assets/css/rangeslider.css" rel="stylesheet">
+<link href="/assets/css/cirrus.min.css" rel="stylesheet" />
+<link href="/assets/css/all.min.css" rel="stylesheet" />
+<link href="/assets/css/osudirect.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.light.css" rel="stylesheet" />
+</head>
+<body>
+<div class="pageScrollers">
+<div class="pageScroller" id="pageScrollerTop">
+<i class="fas fa-chevron-up"></i>
+</div>
+<div class="pageScroller" id="pageScrollerBottom">
+<i class="fas fa-chevron-down"></i>
+</div>
+</div>
+<div class="header header-fixed unselectable header-animated header-gray">
+<div class="header-brand">
+<div class="nav-item no-hover">
+<a href="/home">
+<img alt="osu.direct logo" src="/assets/img/logo.png" class="logo mr-1" width="30">
+<h6 class="title">osu.direct</h6>
+</a>
+</div>
+<div class="nav-item nav-btn" id="header-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="header-nav" id="header-menu">
+<div class="nav-left">
+<div class="nav-item" id="nav-home">
+<a href="/home">Home</a>
+</div>
+<div class="nav-item" id="nav-browse">
+<a href="/browse">Browse</a>
+</div>
+<div class="nav-item" id="nav-recommend">
+<a href="/recommend">Recommend</a>
+</div>
+<div class="nav-item has-sub toggle-hover" id="dropdown">
+<a class="nav-dropdown-link">More</a>
+<ul class="dropdown-menu dropdown-animated" role="menu">
+<li role="menu-item"><a href="/doc">Documentation</a></li>
+<li role="menu-item"><a href="/discord" target="_blank">Discord</a></li>
+<li role="menu-item"><a href="/team">Team</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="sidepanel-container" id="sidepanel">
+<div class="toggle" id="sidepanel-toggle">
+<i class="fas fa-filter"></i>
+</div>
+<div class="sidepanel">
+<div class="sidepanel__header">
+<div class="sidepanel__header__title">Filters</div>
+<div class="sidepanel__header__close" id="sidepanelClose">
+<i class="fas fa-arrow-left"></i>
+</div>
+</div>
+<div class="sidepanel__body">
+<div class="sidepanel__body__content">
+<div class="sidepanel__body__content__title">Search</div>
+<div class="sidepanel__body__content__input">
+<input type="text" class="input" placeholder="Search for beatmaps" id="filter-query">
+</div>
+</div>
+<div class="sidepanel__body__content">
+<div class="sidepanel__body__content__title">Status</div>
+<div class="sidepanel__body__content__input">
+<div class="checkboxes">
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-ranked" data-status="1">
+<label class="form-ext-label" for="filter-status-ranked">Ranked</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-approved" data-status="2">
+<label class="form-ext-label" for="filter-status-approved">Approved</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-qualified" data-status="3">
+<label class="form-ext-label" for="filter-status-qualified">Qualified</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-loved" data-status="4">
+<label class="form-ext-label" for="filter-status-loved">Loved</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-pending" data-status="0">
+<label class="form-ext-label" for="filter-status-pending">Pending</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-wip" data-status="-1">
+<label class="form-ext-label" for="filter-status-wip" style="margin-right: .3rem;">WIP</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-status-graveyard" data-status="-2">
+<label class="form-ext-label" for="filter-status-graveyard">Graveyard</label>
+</div>
+</div>
+</div>
+</div>
+<div class="sidepanel__body__content">
+<div class="sidepanel__body__content__title">Mode</div>
+<div class="sidepanel__body__content__input">
+<div class="checkboxes">
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-mode-osu" data-mode="0">
+<label class="form-ext-label" for="filter-mode-osu">osu!</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-mode-taiko" data-mode="1">
+<label class="form-ext-label" for="filter-mode-taiko">osu!taiko</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-mode-catch" data-mode="2">
+<label class="form-ext-label" for="filter-mode-catch">osu!catch</label>
+</div>
+<div class="checkbox form-ext-control form-ext-checkbox">
+<input class="form-ext-input" type="checkbox" id="filter-mode-mania" data-mode="3">
+<label class="form-ext-label" for="filter-mode-mania">osu!mania</label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sidepanel__body__content__end">
+<a class="btn btn-primary u-block" id="filter-apply">Apply</a>
+</div>
+</div>
+</div>
+</div>
+<div class="hero hero-dark mt-6">
+<div class="hero-body u-center">
+<div class="w-100p-md" style="position: relative">
+<div class="row u-center" id="centerRow">
+<div class="u-flex u-flex-wrap u-justify-center u-gap-2 u-round-xs text-white u-text-center" id="beatmapList">
+</div>
+<div class="u-flex u-flex-wrap u-justify-center u-gap-2 u-round-xs text-white u-text-center" id="loading">
+<div class="loading-block">
+<span>loading...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="musicplayer-container" id="musicplayer-container">
+<div class="musicplayer-close">
+<i class="fas fa-times"></i>
+</div>
+<div class="musicplayer-bar">
+<div class="musicplayer-bar__left">
+<div class="musicplayer-bar__left__cover">
+<img id="musicplayer-cover" src="https://a.ppy.sh/1" alt="cover">
+</div>
+<div class="musicplayer-bar__left__info">
+<div class="musicplayer-bar__left__info__title" id="musicplayer-title">Title</div>
+<div class="musicplayer-bar__left__info__artist" id="musicplayer-artist">Artist</div>
+</div>
+</div>
+<div class="musicplayer-bar__right">
+<div class="musicplayer-bar__right__buttons">
+<div class="musicplayer-bar__right__buttons__button" id="musicplayer-backward">
+<i class="fas fa-step-backward"></i>
+</div>
+<div class="musicplayer-bar__right__buttons__button" id="musicplayer-playpause">
+<i class="fas fa-play"></i>
+</div>
+<div class="musicplayer-bar__right__buttons__button" id="musicplayer-forward">
+<i class="fas fa-step-forward"></i>
+</div>
+</div>
+<div class="musicplayer-bar__right__progress">
+<div class="musicplayer-bar__right__progress__bar">
+<div class="musicplayer-bar__right__progress__bar__progress" id="musicplayer-progress"></div>
+</div>
+<div class="musicplayer-bar__right__progress__time">
+<span class="musicplayer-bar__right__progress__time__current" id="musicplayer-time">0:00 / 0:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer bg-gray-900">
+<div class="animated slideSide wait-2">
+<h6 class="footer__title text-white uppercase">osu.direct</h6>
+<div class="content">
+<div class="divider"></div>
+<div class="row">
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/doc">
+<li class="footer__list-item">Documentation</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/discord" target="_blank">
+<li class="footer__list-item">Discord</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+ <a class="footerlink" href="/team">
+<li class="footer__list-item">Team</li>
+</a>
+</ul>
+</div>
+</div>
+</div>
+<p class="subtitle font-semibold text-xs">osu.direct © 2023 - not affiliated with osu! or peppy in any ways</p>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/textscramble.js"></script>
+<script type="text/javascript" src="/assets/js/rainbowvis.js"></script>
+<script type="text/javascript" src="/assets/js/osudirect.js"></script>
+<script type="text/javascript" src="/assets/js/rangeslider.js"></script>
+<script src="/assets/js/osudirect.browse.js"></script>
+</html>

@@ -1,0 +1,6 @@
+const texts=['fast','reliable','easy to use','free'];const appearTextLine="";$(document).ready(async()=>{$("#count-sets").css("opacity","0");$("#count-data").css("opacity","0");$("#count-crawlers").css("opacity","0");console.log("isMobileDevice: "+isMobileDevice);const el=document.querySelector('.text-scramble');if(isMobileDevice){const randomText=texts[Math.floor(Math.random()*texts.length)];el.innerHTML=randomText;return;}else{const fx=new TextScramble(el)
+let counter=0
+const next=()=>{fx.setText(texts[counter]).then(()=>{setTimeout(next,1800)})
+counter=(counter+1)%texts.length}
+setTimeout(next,500);}
+const stats=await fetch(`${apiUrl}/api/status`);const statsJson=await stats.json();const count_beatmapsSets=parseInt(statsJson.indexes.beatmapSets.size);const caches=Object.keys(statsJson.cache);const crawlers=statsJson.crawlers.length;console.log(caches);const collectedCacheSizes=caches.map(cache=>statsJson.cache[cache].size);const totalCacheSize=collectedCacheSizes.reduce((a,b)=>a+b,0);const truncatedCacheSize=round(totalCacheSize,2);$("#count-sets").text(count_beatmapsSets).addClass("animated slideSide wait-2");$("#count-data").text(truncatedCacheSize+" GB").addClass("animated slideSide wait-1");$("#count-crawlers").text(crawlers).addClass("animated slideSide");});

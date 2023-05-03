@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+<title>osu.direct :: Home</title>
+<meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/assets/css/rangeslider.css" rel="stylesheet">
+<link href="/assets/css/cirrus.min.css" rel="stylesheet" />
+<link href="/assets/css/all.min.css" rel="stylesheet" />
+<link href="/assets/css/osudirect.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.css" rel="stylesheet" />
+<link href="/assets/css/cirrus.ctp.light.css" rel="stylesheet" />
+</head>
+<body>
+<div class="pageScrollers">
+<div class="pageScroller" id="pageScrollerTop">
+<i class="fas fa-chevron-up"></i>
+</div>
+<div class="pageScroller" id="pageScrollerBottom">
+<i class="fas fa-chevron-down"></i>
+</div>
+</div>
+<div class="header header-fixed unselectable header-animated header-gray">
+<div class="header-brand">
+<div class="nav-item no-hover">
+<a href="/home">
+<img alt="osu.direct logo" src="/assets/img/logo.png" class="logo mr-1" width="30">
+<h6 class="title">osu.direct</h6>
+</a>
+</div>
+<div class="nav-item nav-btn" id="header-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class="header-nav" id="header-menu">
+<div class="nav-left">
+<div class="nav-item" id="nav-home">
+<a href="/home">Home</a>
+</div>
+<div class="nav-item" id="nav-browse">
+<a href="/browse">Browse</a>
+</div>
+<div class="nav-item" id="nav-recommend">
+<a href="/recommend">Recommend</a>
+</div>
+<div class="nav-item has-sub toggle-hover" id="dropdown">
+<a class="nav-dropdown-link">More</a>
+<ul class="dropdown-menu dropdown-animated" role="menu">
+<li role="menu-item"><a href="/doc">Documentation</a></li>
+<li role="menu-item"><a href="/discord" target="_blank">Discord</a></li>
+<li role="menu-item"><a href="/team">Team</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+<div class="hero hero-dark fullscreen">
+<div class="hero-body u-center">
+<div class="w-90" style="position: relative">
+<div class="row">
+<div class="col-12" style="padding: 2rem;">
+<div class="w-100 u-center text-center animated slideSide">
+<img class="logo" src="/assets/img/logo.png" width="300" alt="osu.direct logo" />
+</div>
+<h4 class="text-white u-text-center animated slideSide wait-1">a <span class="text-scramble"></span> osu beatmap mirror!</h4>
+</div>
+</div>
+<div>
+<p class="text-white text-lg lead u-text-center mb-1 animated slideSide wait-2">Why should i use osu.direct?</p>
+</div>
+<div class="row u-center">
+<div class="u-flex u-flex-wrap u-justify-center u-gap-2 u-round-xs text-white u-text-center">
+<div class="card bg-gray-900 glow animated slideSide">
+<div class="content u-text-center pt-3 px-5" style="min-width: 250px; max-width: 650px;">
+<i class="far fa-bolt fa-2x w-10 fa-wrapper text-ctp-yellow bg-ctp-surface0 p-3 u-center u-round-full"></i>
+<p id="projectname" class="title text-lg text-white mt-2 mb-0">Fast, Reeeeeally fast</p>
+<p class="text-light">We know the pain of waiting about for beatmaps to download from
+bancho, or from other beatmap mirrors that limit how fast you can go. We don't do that
+here. You can enjoy blazing fast speeds, without the need of subscriptions
+or any payment.
+</p>
+</div>
+</div>
+<div class="card bg-gray-900 glow animated slideSide wait-1">
+<div class="content u-text-center pt-3 px-5" style="min-width: 250px; max-width: 650px;">
+<i class="far fa-heart fa-2x w-10 fa-wrapper text-ctp-red bg-ctp-surface0 p-3 u-center u-round-full"></i>
+<p id="projectname" class="title text-lg text-white mt-2 mb-0">Reliable and trusted</p>
+<p class="text-light">We used to be called Kitsu, but now we have a brand new, professional
+name about. As Kitsu, we have supported a large variety of projects. This includes
+Akatsuki, one of the largest osu! private servers, and o!rdr, the largest
+web replay rendering service powered by Danser. If they can trust us to reliably run,
+you can too.
+</p>
+</div>
+</div>
+<div class="card bg-gray-900 glow animated slideSide wait-2">
+<div class="content u-text-center pt-3 px-5" style="min-width: 250px; max-width: 650px;">
+<i class="far fa-thumbs-up fa-2x w-10 fa-wrapper text-ctp-blue bg-ctp-surface0 p-3 u-center u-round-full"></i>
+<p id="projectname" class="title text-lg text-white mt-2 mb-0">Widely compatible, perfect
+for any use
+</p>
+<p class="text-light">We know how frustrating it is when you see something you could utilise
+in your next project, but is missing that one thing you need. That's why we're happy to
+add new features to our service whenever asked. We also support
+the v1 and v2 api routes, for ease of use and everything in between.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row u-center mt-5">
+<div class="u-flex u-flex-wrap u-justify-center u-gap-10 u-round-xs text-white u-text-center">
+<div class="data-circle-container animated slideSide wait-2">
+<span class="data-circle-container__number" id="count-sets">0</span>
+<span class="data-circle-container__text">Beatmap Sets</span>
+</div>
+<div class="data-circle-container animated slideSide wait-1">
+<span class="data-circle-container__number" id="count-data">0 GB</span>
+<span class="data-circle-container__text">Cached Data</span>
+</div>
+<div class="data-circle-container animated slideSide">
+<span class="data-circle-container__number" id="count-crawlers">0</span>
+<span class="data-circle-container__text">Working Crawlers</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer bg-gray-900">
+<div class="animated slideSide wait-2">
+<h6 class="footer__title text-white uppercase">osu.direct</h6>
+<div class="content">
+<div class="divider"></div>
+<div class="row">
+<div class="col-4">
+ <ul class="no-bullets">
+<a class="footerlink" href="/doc">
+<li class="footer__list-item">Documentation</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/discord" target="_blank">
+<li class="footer__list-item">Discord</li>
+</a>
+</ul>
+</div>
+<div class="col-4">
+<ul class="no-bullets">
+<a class="footerlink" href="/team">
+<li class="footer__list-item">Team</li>
+</a>
+</ul>
+</div>
+</div>
+</div>
+<p class="subtitle font-semibold text-xs">osu.direct © 2023 - not affiliated with osu! or peppy in any ways</p>
+</div>
+</footer>
+</body>
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/textscramble.js"></script>
+<script type="text/javascript" src="/assets/js/rainbowvis.js"></script>
+<script type="text/javascript" src="/assets/js/osudirect.js"></script>
+<script type="text/javascript" src="/assets/js/rangeslider.js"></script>
+<script src="/assets/js/osudirect.home.js"></script>
+</html>
